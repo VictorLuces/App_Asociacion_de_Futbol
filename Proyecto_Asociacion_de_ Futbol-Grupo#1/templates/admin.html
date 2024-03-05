@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo_admin.css')}}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://localhost/phpmyadmin/" target="_blank">Base de datos</a>
+            <a href="">Visualizar Pagos</a>
+            <a href="/" id="logout">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <br>
+    <h1 class="logo">Bienvenido Sr. Administrador</h1>
+    <br>
+    <div class="wrapper">
+        <div class="tex">
+            <h2>Porcentajes de Pagos</h2>
+        </div>
+        <br>
+        <div class="porcentajes" style="--porcentaje:25">
+            <svg width="150" height="150">
+                <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+            </svg>
+            <span>25%</span>
+        </div>
+        <div class="porcentajes" style="--porcentaje:75">
+            <svg width="150" height="150">
+                <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+            </svg>
+            <span>75%</span>
+        </div>
+        <div class="wrap">
+            <div class="info">
+                <h3>Sin pagar</h3>
+            </div>
+            <div class="info">
+                <h4>Pagado</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

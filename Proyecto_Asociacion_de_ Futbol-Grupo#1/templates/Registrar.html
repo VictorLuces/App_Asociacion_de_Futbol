@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar | DSA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_R.css')}}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/registrarse" method="POST">
+            <h1>Registrar</h1>
+            <div class="input-box">
+                <input type="text" id="username" name="fullname" placeholder="Usuario" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="clave" placeholder="Contraseña" required>
+                <i class="bx bxs-lock"></i>
+            </div>
+            <div class="remember-forgot">
+                <p>¿Ya tienes cuenta? <a href='/iniciar_sesion'><b>Inicia Sesión</b></a></p>
+            </div>
+            <button type="submit" class="btn_R"> Registrar </button>
+            <div class="wrapper-btn">
+                <br>
+                <a href="/">Atrás</a>
+            </div>
+            <div class="register-link">
+                <a href="#"> Ayuda </a>
+            </div>
+        </form>
+
+    </div>
+    <div>
+        {% if flash %}
+        <div class="error-messages">
+            {{ flash(category='error') }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Inscripción|DSA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo_pago_ins.css')}}">
+</head>
+
+<body>
+    <br>
+    <h1 class="logo">Registrar pago de inscripción</h1>
+    <div class="wrapper">
+        <form action="/pago_inscripcion" method="POST">
+            <div class="id-unico">
+                <p>Su id unico es:</p>
+                <div class="input-box">
+                    <input type="text" name="id-unico" placeholder="id"disabled>
+                </div>
+            </div>
+            <h3>Datos bancarios</h3>
+            <div class="wrapper-label">
+                <div class="banco">
+                    <p>Banco Banesco 0134 rif:E-844116848</p>
+                </div>
+                <div class="monto">
+                    <p>Monto: 480 bs</p>
+                </div>
+            </div>
+            <h4>Registrar datos de pago</h4>
+            <div class="wrapper-registrar">
+                <div class="input-box">
+                    <h5>Número de Referencia</h5>
+                    <input [type="number"] size="13" name="refe" placeholder="" required >
+                </div>
+                <div class="input-desplegable" required>
+                    <b><p>Banco Emisor</p></b>
+                    <select name="Bancos" id="banco">
+                        <option value=""disabled selected>Selecione el Banco</option>
+                        <option value="Banco Banesco">Banco Banesco</option>
+                        <option value="Banco de Venezuela">Banco de Venezuela</option>
+                        <option value="Banco Mercantil">Banco Mercantil</option>
+                        <option value="Banco Provincial">Banco Provincial</option>
+                        <option value="BancAmiga">BancAmiga</option>
+                    </select>
+                </div>
+                <div class="input-date">
+                    <b><p>Fecha de Transacción</p></b>
+                    <input type="date" id="start" name="fecha" min="2007-01-01" required>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="wrapper-btn">
+                <a href="/inscripcion">Atrás</a>
+                <button type="submit" class="btn"> Guardar</button>
+            </div>
+        </form>
+
+    </div>    
+</body>
+
+
+
+</html>

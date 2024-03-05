@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representantes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo_representante.css')}}">
+    
+<body>
+    <header>
+        <nav>
+            <a href="/inscripcion">Inscribir Atleta</a>
+            <a href="/registrar_pago">Registrar Pago</a>
+            <a href="/" id="logout">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <br>
+    <h1 class="logo">Bienvenido Sr. Representante</h1> 
+    <br> 
+    <div class="wrapper">
+        <div class="texto">
+            <h2>Representante</h2>
+            <h3>Atletas</h3>
+        </div>
+        <div class="container">
+            <div class="tabla-representante">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cedúla</th>
+                            <th>Telf</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Víctor</td>
+                            <td>Luces</td>
+                            <td>27213542</td>
+                            <td>04146547824</td>
+                            <td>victor@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tabla-atletas">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>id</th>
+                            <th>Edad</th>
+                            <th>Genero</th>
+                            <th>Categoria</th>
+                        </tr>  
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>César</td>
+                            <td>Luces</td>
+                            <td>102</td>
+                            <td>12</td>
+                            <td>M</td>
+                            <td>Sub-13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <script>
+            const form = document.getElementById("obtener_atletas");
+    
+            form.addEventListener("submit", function(event){
+                event.preventDefault();
+            })
+        </script>
+    </div>
+</body>
+
+</html>

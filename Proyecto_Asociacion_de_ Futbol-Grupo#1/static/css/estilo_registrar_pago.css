@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url('../img/f2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 1.5em;
+}
+
+.logo {
+    font-size: 3.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 6px 5px 8px black;
+}
+.wrapper {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.wrapper h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0px 0px 15px;
+}
+.wrapper h3{
+    text-align: center;
+    font-size: 2em;
+    margin: 0px 0px -15px;
+}
+.wrapper h4 {
+    font-size: 1.3em;
+    margin: 0px 30px;
+}
+.wrapper h5 {
+    font-size: 1.3em;
+    padding: 0px 100px;
+}
+.input-box input {
+    width: 97%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.wrapper-desplegable .input-date {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+}
+
+.wrapper-desplegable .input-desplegable {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+}
+
+.input-desplegable select{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 35px 10px 20px;
+}
+.input-desplegable select option{
+    background:black;
+}
+.input-desplegable p {
+    font-size: 1.3em;
+    color: #fff;
+    padding: 0px 80px;
+}
+.input-date input {
+    width: 98%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 10px 20px 20px;
+}
+
+.input-date p {
+    font-size: 1.3em;
+    color: #fff;
+    padding: 0px 28px;
+}
+
+.wrapper-dato {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.wrapper-desplegable {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.wrapper-btn {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.wrapper-btn .btn {
+    width:50%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 0px 100px;
+}
+
+.wrapper-btn a {
+    width: 50%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 60px 30px;
+    text-decoration: none;
+    margin: 0px 70px;
+}

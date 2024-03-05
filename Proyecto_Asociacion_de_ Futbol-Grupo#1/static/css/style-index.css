@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: rgba(229, 247, 239, 0.705);
+    align-items: center;
+    padding: 10px;
+}
+
+body {
+    align-items: center;
+    min-height: 100vh;
+    background: url('../img/fondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    display: inline-block;
+    padding-right: 10px;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgb(102, 243, 184);
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.wrapper { 
+    padding: 30px 40px;
+    width: 1280px;
+}
+
+.wrapper .wrapper-texto {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    text-shadow: 6px 5px 8px black;
+}
+.wrapper-texto .bienv{
+    margin: 60px;
+    text-align: center;
+    font-size: 1em;
+
+}

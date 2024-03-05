@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Pago</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo_registrar_pago.css')}}">
+
+</head>
+
+<body>
+    <br>
+    <h1 class="logo">Registrar Pago</h1>
+    <div class="wrapper">
+        <form action="/pago" method="POST">
+            <h2>Datos Bancarios</h2>
+            <p>Banco Banesco 0134 rif:E-844116848</p>                
+            <h3>Registrar datos de pago</h3>
+            <div class="wrapper-dato">
+                <div class="input-box">
+                    <h4>Número de Referencia</h4>
+                    <input [type="number"] size="13" name="refe" placeholder="" min="0" required>
+                </div>
+                <div class="input-box">
+                    <h5>ID Atleta</h5>
+                    <input [type="number"] size="13" name="id_a" placeholder="" required>
+                </div>
+            </div>
+            <div class="wrapper-desplegable">
+                <div class="input-date">
+                    <b><p>Fecha de Transacción</p></b>
+                    <input type="date" id="start" name="date-nac" min="2007-01-01" required>
+                </div>
+                <div class="input-desplegable">
+                    <b><p>Banco Emisor</p></b>
+                    <select name="Bancos" id="banco">
+                        <option value=" " disabled selected>Seleccione el banco</option>
+                        <option value="Banco Banesco">Banco Banesco</option>
+                        <option value="Banco de Venezuela">Banco de Venezuela</option>
+                        <option value="Banco Mercantil">Banco Mercantil</option>
+                        <option value="Banco Provincial">Banco Provincial</option>
+                        <option value="BancAmiga">BancAmiga</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="wrapper-btn">
+                <a href="/representantes">Atrás</a>
+                <button type="submit" class="btn"> Guardar</button>
+            </div>
+        </form>
+    </div>    
+</body>
+
+</html>

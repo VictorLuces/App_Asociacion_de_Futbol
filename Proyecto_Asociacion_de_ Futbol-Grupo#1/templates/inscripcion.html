@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo-ins.css')}}">
+
+</head>
+
+<body>
+    <br>
+    <h1 class="logo">Inscripcion</h1>
+    <div class="wrapper">
+        <form action="/inscripcion" method="POST">
+            <h2>Datos del Atleta</h2>
+            <br>
+            <div class="wrapper-atleta">
+                <div class="input-box">
+                    <input type="text" name="fullname" placeholder="Nombre" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="lastname" placeholder="Apellido" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="direccion" placeholder="Dirección" required>
+                </div>
+                <div class="input-date">
+                    <b><p>Fecha de nacimiento</p></b>
+                    <input type="date" id="start" name="date-nac" min="2007-01-01" max="2020-12-31" required>
+                </div>
+                
+                <div class="input-genero" required>
+                    <p>
+                        <b><label for="name">Genero</label></b>
+                        <input name="genero" type="radio" value="rbmasculino" ><b>M</b> 
+                        <input name="genero" type="radio" value="rbfemenino" ><b>F</b>
+                    </p>
+                </div>    
+            </div>
+            <br>
+            <h3>Datos del Representante</h4>
+            <br>
+            <div class="wrapper-repre"> 
+                <div class="input-box">
+                    <input type="text" name="fullnameR" placeholder="Nombre" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="lastnameR" placeholder="Apellido" required>
+                </div>
+                <div class="input-box">
+                    <input type="tel" name="number" placeholder="Número de telefono" required>
+                </div>
+                <div class="input-box">
+                    <input [type="number"] name="id" placeholder="Cédula" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="wrapper-btn">
+                <a href="/representantes">Atrás</a>
+                <button type="submit" class="btn">Siguiente</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
